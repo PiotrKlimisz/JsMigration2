@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html ng-app="customersApp">
+
 <head>
     <title>Customer Manager</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,6 +9,7 @@
     <link href="Content/animations.css" rel="stylesheet" />
     <link href="Content/styles.css" rel="stylesheet" />
 </head>
+
 <body ng-cloak>
 
     <header class="navbar navbar-inner navbar-fixed-top" ng-controller="NavbarController as vm">
@@ -27,8 +29,7 @@
             <div class="nav-container" data-collapse="vm.isCollapsed">
 
                 <!-- With menu-highlighter directive -->
-                <ul class="nav navbar-nav nav-pills navBarPadding"
-                    menu-highlighter highlight-class-name="active">
+                <ul class="nav navbar-nav nav-pills navBarPadding" menu-highlighter highlight-class-name="active">
                     <li><a href="#/customers">Customers</a></li>
                     <li><a href="#/orders">Orders</a></li>
                     <li><a href="#/about">About</a></li>
@@ -82,7 +83,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-animate.min.js"></script>
     <script src="Scripts/angular-ui-bootstrap.js"></script>
     <script src="Scripts/tweenMax.min.js"></script>
-    
+
     <!-- To use breeze change the app/customersApp/services/config.js useBreeze property to true -->
     <script src="Scripts/breeze.min.js"></script>
     <script src="Scripts/breeze.angular.js"></script>
@@ -90,7 +91,9 @@
     <!-- Custom scripts -->
     <script src="app/wc.directives/directives/wcOverlay.js"></script>
     <script src="app/wc.directives/directives/menuHighlighter.js"></script>
-    <script src="app/customersApp/app.js"></script>
+
+    <script src="Scripts/main.js"></script>
+    <!-- <script src="app/customersApp/app.js"></script>
     <script src="app/customersApp/animations/listAnimations.js"></script>
     <script src="app/customersApp/directives/wcUnique.js"></script>
     <script src="app/customersApp/filters/nameCityStateFilter.js"></script>
@@ -109,9 +112,8 @@
     <script src="app/customersApp/controllers/orders/ordersController.js"></script>
     <script src="app/customersApp/controllers/aboutController.js"></script>
     <script src="app/customersApp/controllers/navbarController.js"></script>
-    <script src="app/customersApp/controllers/loginController.js"></script>
+    <script src="app/customersApp/controllers/loginController.js"></script> -->
 
 </body>
+
 </html>
-
-
