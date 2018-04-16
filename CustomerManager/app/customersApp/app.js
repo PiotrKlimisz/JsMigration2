@@ -1,5 +1,4 @@
 ﻿(function() {
-  // import angular from 'angular'
 
   var app = angular.module('customersApp', [
     'ngRoute',
@@ -67,6 +66,7 @@
         }
       });
     }
+
   ]);
-  export default app;
+
 })();
