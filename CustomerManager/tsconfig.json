@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "target": "ES5"
+    },
+    "exclude": [
+        "node_modules"
+    ],
+    "include": [
+        "app/**/*.ts"
+    ]
+}

@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html ng-app="customersApp">
+
 <head>
     <title>Customer Manager</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,6 +9,7 @@
     <link href="Content/animations.css" rel="stylesheet" />
     <link href="Content/styles.css" rel="stylesheet" />
 </head>
+
 <body ng-cloak>
 
     <header class="navbar navbar-inner navbar-fixed-top" ng-controller="NavbarController as vm">
@@ -27,11 +29,16 @@
             <div class="nav-container" data-collapse="vm.isCollapsed">
 
                 <!-- With menu-highlighter directive -->
-                <ul class="nav navbar-nav nav-pills navBarPadding"
-                    menu-highlighter highlight-class-name="active">
-                    <li><a href="#/customers">Customers</a></li>
-                    <li><a href="#/orders">Orders</a></li>
-                    <li><a href="#/about">About</a></li>
+                <ul class="nav navbar-nav nav-pills navBarPadding" menu-highlighter highlight-class-name="active">
+                    <li>
+                        <a href="#/customers">Customers</a>
+                    </li>
+                    <li>
+                        <a href="#/orders">Orders</a>
+                    </li>
+                    <li>
+                        <a href="#/about">About</a>
+                    </li>
                     <li id="nav-login" ng-click="vm.loginOrOut()">
                         <!-- href not used but needed to compare against path in menu-highlighter -->
                         <a data-href="#/login">{{ vm.loginLogoutText }}</a>
@@ -63,7 +70,8 @@
                     <footer>
                         <div class="row">
                             <div class="col-md-12">
-                                Created by <a href="http://twitter.com/DanWahlin" target="_blank">Dan Wahlin</a>
+                                Created by
+                                <a href="http://twitter.com/DanWahlin" target="_blank">Dan Wahlin</a>
                             </div>
                         </div>
                     </footer>
@@ -73,7 +81,8 @@
     </div>
 
     <div wc-overlay wc-overlay-delay="300">
-        <br /><img src="Content/images/spinner.gif" />&nbsp;&nbsp;Loading
+        <br />
+        <img src="Content/images/spinner.gif" />&nbsp;&nbsp;Loading
     </div>
 
     <!-- 3rd party libraries -->
@@ -82,7 +91,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-animate.min.js"></script>
     <script src="Scripts/angular-ui-bootstrap.js"></script>
     <script src="Scripts/tweenMax.min.js"></script>
-    
+
     <!-- To use breeze change the app/customersApp/services/config.js useBreeze property to true -->
     <script src="Scripts/breeze.min.js"></script>
     <script src="Scripts/breeze.angular.js"></script>
@@ -112,6 +121,5 @@
     <script src="app/customersApp/controllers/loginController.js"></script>
 
 </body>
+
 </html>
-
-

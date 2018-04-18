@@ -3,14 +3,16 @@
   "author": "Dan Wahlin",
   "version": "1.0.0",
   "dependencies": {
+    "@types/angular": "^1.6.43",
+    "body-parser": "^1.14.2",
+    "cookie-parser": "^1.4.1",
+    "csurf": "^1.8.3",
+    "errorhandler": "^1.4.2",
     "express": "4.13.3",
+    "express-session": "^1.13.0",
     "jade": ">=1.11.0",
     "mongoose": ">=4.3.5",
-    "cookie-parser": "^1.4.1",
-    "body-parser": "^1.14.2",
-    "express-session": "^1.13.0",
-    "errorhandler": "^1.4.2",
-    "csurf": "^1.8.3"
+    "typescript": "^2.8.1"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
