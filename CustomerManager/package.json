@@ -7,6 +7,7 @@
     "@types/angular-animate": "^1.5.9",
     "@types/gsap": "^1.19.2",
     "body-parser": "^1.14.2",
+    "concurrently": "^3.5.1",
     "cookie-parser": "^1.4.1",
     "csurf": "^1.8.3",
     "errorhandler": "^1.4.2",
@@ -29,6 +30,15 @@
     "karma-chrome-launcher": "^0.2.2",
     "karma-jasmine": "^0.3.6",
     "karma-phantomjs-launcher": "^0.2.3",
-    "phantomjs": "^1.9.19"
+    "phantomjs": "^1.9.19",
+    "prettier": "^1.12.1",
+    "tslint": "^5.9.1",
+    "tslint-config-prettier": "^1.10.0",
+    "tslint-eslint-rules": "^5.1.0"
+  },
+  "scripts": {
+    "tslint-check": "tslint-config-prettier-check ./tslint.json",
+    "ts-compile": "tsc",
+    "build": "concurrently --kill-others-on-fail -p \"[{name}]\" -n \"ts_lint,ts_compile\" \"npm run tslint-check\" \"npm run ts-compile\""
   }
 }
