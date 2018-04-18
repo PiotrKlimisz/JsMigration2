@@ -1,4 +1,9 @@
-﻿(function() {
+﻿
+import { TweenMax } from "gsap";
+import { Back } from "gsap";
+
+(function () {
+    var angular: ng.IAngularStatic;
 
     var wcAnimations = function () {
         var duration = 0.5;

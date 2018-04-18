@@ -12,7 +12,7 @@
                 }
             };
 
-        factory.login = function (email, password) {
+        factory['login'] = function (email, password) {
             return $http.post(serviceBase + 'login', { userLogin: { userName: email, password: password } }).then(
                 function (results) {
                     var loggedIn = results.data.status;;
@@ -21,7 +21,7 @@
                 });
         };
 
-        factory.logout = function () {
+        factory['logout'] = function () {
             return $http.post(serviceBase + 'logout').then(
                 function (results) {
                     var loggedIn = !results.data.status;
@@ -30,7 +30,7 @@
                 });
         };
 
-        factory.redirectToLogin = function () {
+        factory['redirectToLogin'] = function () {
             $rootScope.$broadcast('redirectToLogin', null);
         };
 

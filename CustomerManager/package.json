@@ -4,6 +4,8 @@
   "version": "1.0.0",
   "dependencies": {
     "@types/angular": "^1.6.43",
+    "@types/angular-animate": "^1.5.9",
+    "@types/gsap": "^1.19.2",
     "body-parser": "^1.14.2",
     "cookie-parser": "^1.4.1",
     "csurf": "^1.8.3",
@@ -15,12 +17,13 @@
     "typescript": "^2.8.1"
   },
   "devDependencies": {
+    "gsap": "^1.20.4",
     "gulp": "^3.9.0",
     "gulp-angular-templatecache": "^1.8.0",
     "gulp-concat": "^2.6.0",
-    "gulp-sass": "^2.1.1",
     "gulp-csso": "^1.0.1",
     "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.1.1",
     "gulp-uglify": "^1.5.1",
     "karma": "^0.13.19",
     "karma-chrome-launcher": "^0.2.2",

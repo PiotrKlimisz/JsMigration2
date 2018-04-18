@@ -5,10 +5,10 @@
     var wcOverlayDirective = function ($q, $timeout, $window, httpInterceptor) {
 
         var template = '<div id="overlay-container" class="overlayContainer">' +
-                            '<div id="overlay-background" class="overlayBackground"></div>' +
-                            '<div id="overlay-content" class="overlayContent" data-ng-transclude>' +
-                            '</div>' +
-                        '</div>',
+            '<div id="overlay-background" class="overlayBackground"></div>' +
+            '<div id="overlay-content" class="overlayContent" data-ng-transclude>' +
+            '</div>' +
+            '</div>',
 
             link = function (scope, element, attrs) {
                 var overlayContainer = null,
@@ -120,7 +120,7 @@
                     var func = null;
                     if (document.defaultView && document.defaultView.getComputedStyle) {
                         func = document.defaultView.getComputedStyle;
-                    } else if (typeof (document.body.currentStyle) !== "undefined") {
+                    } else if (typeof (document.body['currentStyle']) !== "undefined") {
                         func = function (element, anything) {
                             return element["currentStyle"];
                         };
